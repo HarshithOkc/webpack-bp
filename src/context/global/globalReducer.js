@@ -1,13 +1,8 @@
-import {
-    SET_TEXT
-} from './../meta/constants'
+import {  } from './../meta/types'
 
 export default ( state, action ) => {
     switch( action.type ){
-        case SET_TEXT:
-            return {
-                ...state,
-                text: action.payload
-            }
+        default: 
+            return state;
     }
 };

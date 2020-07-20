@@ -1,14 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HelloWorld from './containers/HelloWorld/helloWorld';
+import './assets/css/style.css';
+import AppRouter from './utils/Routes/Public';
+const path = require('path');
 
 const App = () => {
+    console.log(ENV);
     return(
-        <Router>
-            <Switch>
-                <Route exact path='/' component={HelloWorld} />
-            </Switch>
-        </Router>
+        <AppRouter />
     )
 }
 
