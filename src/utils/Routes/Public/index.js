@@ -12,10 +12,6 @@ const Routes = () => {
                     </Suspense>
                 </Route>
             </Switch>
-
-            <Route exact path="/money_transfer">
-            
-          </Route>
         </Router>
     )
 }
