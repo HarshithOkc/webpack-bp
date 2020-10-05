@@ -9,6 +9,16 @@ import { CssBaseline } from '@material-ui/core';
 // For Webview android actions
 window.androidObj = function AndroidClass() {}
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js').then(registration => {
+        console.log('SW registered: ', registration);
+        }).catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+        });
+    });
+}
+
 ReactDom.render(
     <Provider>
         <CssBaseline>
