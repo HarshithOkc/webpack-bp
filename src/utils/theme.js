@@ -19,7 +19,7 @@ export const theme = createMuiTheme({
             textTransform: 'none',
             fontSize: '16px',
         },
-        fontFamily: 'Noto Sans, sans-serif'
+        fontFamily: 'sans-serif'
     },
     overrides: {
         MuiInputLabel: {
